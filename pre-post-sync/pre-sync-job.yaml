@@ -10,7 +10,8 @@ spec:
   template:
     spec:
       containers:
-      - name: busybox
+      - name: sleep
+        image: busybox:latest
         command: ["sleep", "4"]
       restartPolicy: Never
   backoffLimit: 0
