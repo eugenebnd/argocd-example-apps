@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: busybox:latest
+        image: alpine:latest
         command: ["sleep", "4"]
       restartPolicy: Never
   backoffLimit: 0
