@@ -1,8 +1,17 @@
-# apiVersion: v1
-# kind: ConfigMap
-# metadata:
-#   namespace: default
-#   name: my-configmap
-# data:
-#   key1: value1
-#   key2: value2
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: cm-one
+data:
+  key1: value1
+  key2: value2
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: cm-two
+data:
+  key1: value1
+  key2: value2
